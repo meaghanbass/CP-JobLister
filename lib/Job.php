@@ -49,8 +49,9 @@
 
         // Get Category
         public function getCategory($category_id){
-            $this->db->query("SELECT * FROM categories WHERE id = :category_id");
-            $this-db->bind(':category_id');
+            $this->db->query("SELECT * FROM categories WHERE id = :category_id"
+                );
+            $this->db->bind(':category_id', $category_id);
 
             // Assign Row
             $row = $this->db->single();
