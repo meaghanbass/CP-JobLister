@@ -20,5 +20,6 @@
 
             </ul>
             </nav>
-            <h3 class="text-muted"><?php echo SITE_TITLE; ?></h3>
+            <a href="index.php"><h3 class="text-muted"><?php echo SITE_TITLE; ?></h3></a>
         </div>
+        <?php displayMessage(); ?>
